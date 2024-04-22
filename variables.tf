@@ -9,3 +9,11 @@ variable "aws_region" {
   type    = string
   default = "us-east-1"
 }
+
+//RDS
+
+variable "db_password" {
+  description = "RDS root user password"
+  type        = string
+  sensitive   = true
+}
